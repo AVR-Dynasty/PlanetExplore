@@ -1,40 +1,51 @@
-### Unreal Engine 5 Generated Files ###
-#####################################
+# Ignore all files by default, but scan all directories.
+*
+!*/
 
-# 编译输出和缓存目录
-Binaries/
-Build/
-DerivedDataCache/
-Intermediate/
-Source/ThirdParty/
+# Do not ignore git files in the root of the repo.
+!/.git*
 
-# Visual Studio 或其他 IDE 相关的临时文件 (已在 VisualStudio.gitignore 中涵盖，但为了安全再次列出)
-.vs/
-*.sln
-*.vcxproj
-*.vcxproj.filters
-*.ncb
-*.opensdf
-*.sdf
-*.suo
+# Do not ignore current project's `.uproject`.
+!/*.uproject
 
-# Unreal Engine Editor 运行时生成的配置文件
-Saved/
-/Config/DefaultEngine.ini
+# Do not ignore source, config and plugins dirs.
+!/Source/**
+!/Config/**
+!/Plugins/**
 
-# 崩溃报告和日志
-*/CrashReportClient/
-*/Logs/
-*.log
+# Only allow .uasset and .umap files from /Content dir.
+# They're tracked by git-lfs, don't forget to track other
+# files if adding them here.
+!/Content/**/*.uasset
+!/Content/**/*.umap
 
-# 启动器相关目录 (通常不会存在于项目仓库，但预防性添加)
-.gitattributes
-Content/Developers/
+# Allow any files from /RawContent dir.
+# Any file in /RawContent dir will be managed by git lfs.
+!/RawContent/**/*
 
-# 打包/发布目录
-*/Packaged/
-*/Shipping/
+# OS/platform generated files.
 
-# 外部工具和操作系统相关
-.DS_Store # macOS
-Thumbs.db # Windows
+# Windows
+ehthumbs.db
+Thumbs.db
+
+# Mac OS X
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# vim
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# Visual Studio
+.vs
