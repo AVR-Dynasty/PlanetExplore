@@ -1,0 +1,40 @@
+### Unreal Engine 5 Generated Files ###
+#####################################
+
+# 编译输出和缓存目录
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Source/ThirdParty/
+
+# Visual Studio 或其他 IDE 相关的临时文件 (已在 VisualStudio.gitignore 中涵盖，但为了安全再次列出)
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.ncb
+*.opensdf
+*.sdf
+*.suo
+
+# Unreal Engine Editor 运行时生成的配置文件
+Saved/
+/Config/DefaultEngine.ini
+
+# 崩溃报告和日志
+*/CrashReportClient/
+*/Logs/
+*.log
+
+# 启动器相关目录 (通常不会存在于项目仓库，但预防性添加)
+.gitattributes
+Content/Developers/
+
+# 打包/发布目录
+*/Packaged/
+*/Shipping/
+
+# 外部工具和操作系统相关
+.DS_Store # macOS
+Thumbs.db # Windows
