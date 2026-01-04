@@ -32,6 +32,6 @@ protected:
 	FName MainMenuMapName = FName("Map_MainMenu");
 
 	UPROPERTY(EditDefaultsOnly, Category = "Game Flow")
-	FName GameplayMapName = FName("ThirdPersonMap");
+	FName GameplayMapName = FName("Stylized_Nature_ExampleScene");
 
 };
